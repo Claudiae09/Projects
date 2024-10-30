@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+</head>
+<body>
+<h2> Courses I am taking </h2>
+{% for i in courses %}
+  {% if i [4] =='2' %}
+    <p>Sophomore level course: {{ i }}</p>
+  {% elif i [4] =='3' %}
+    <p>Junior level course: {{ i }}</p>
+  {% elif i [4] =='4' %}
+    <p>Senior level course: {{ i }}</p>
+  {% else %}
+    <p> PHd level course: {{ i }}</p>
+  {% endif %}
+{% endfor %}
+</body>
+</html>
