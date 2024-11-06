@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+</head>
+<body>
+<h1>Register for our Exciting Event</h1>
+<form method ='POST'>
+    {{form.hidden_tag() }}
+    <p>{{ form.First_Name.label }}: {{form.First_Name() }}</p>
+    <p>{{ form.Last_Name.label }}: {{form.Last_Name() }}</p>
+    <p>{{ form.Email.label }}: {{form.Email() }}</p>
+    <p>{{ form.PID.label }}: {{form.PID() }}</p>
+    <p>{{ form.Campus.label }}: {{form.Campus() }}</p>
+    <p>{{ form.Major.label }}: {{form.Major() }}</p>
+    <p>{{ form.submit() }}</p>
+</form>
+
+
+
+</body>
+</html>
